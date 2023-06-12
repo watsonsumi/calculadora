@@ -1,0 +1,114 @@
+*{
+    font-size: 2vh;
+    padding: 5px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 400px;
+    font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", sans-serif;
+}
+body{
+    background-image: radial-gradient(white, black);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button{
+    margin: 3px;
+    font-weight: bolder;
+    transition: 0.4s;
+    border-radius: 10px;
+    padding: 0;
+    border: 1px solid black;
+    height: 5vh;
+}
+button:hover{
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+    box-shadow: violet 5px 5px 5px, blue 10px 10px 20px, brown 15px 15px 50px;
+}
+button:active{
+    background-color: gray;
+}
+.numbers{
+    height: auto;
+    width: auto;
+    font-size: 3vh;
+}
+.functions{
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: darkslategray;
+    color: white;
+}
+.operations{
+    height: auto;
+    width: auto;
+    background-color: brown;
+    color: white;
+    font-size: 3vh;
+}
+.calculadora{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+    background-color: blueviolet;
+    box-shadow: blue 5px 5px 5px, yellow 10px 10px 20px, brown 15px 15px 50px;
+    transition: 2s;
+}
+.visor{
+    height: 40px;
+    padding: 5px;
+    display: block;
+    font-size: 4vh;
+    font-weight: bolder;
+    color: black;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+#superior{
+    text-align: left;
+    padding: 5px;
+}
+#inferior{
+    text-align: right;
+    padding: 5px;
+}
+#zero{grid-area: zero;}
+#equal{grid-area: equal; font-size: 3vh;}
+#_1{grid-area: _1;}
+#_2{grid-area: _2;}
+#_3{grid-area: _3;}
+#_4{grid-area: _4;}
+#_5{grid-area: _5;}
+#_6{grid-area: _6;}
+#_7{grid-area: _7;}
+#_8{grid-area: _8;}
+#_9{grid-area: _9;}
+#teclado{
+    display: grid;
+    justify-content: space-around;
+    gap: 3px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". . . ."
+    ". . . ."
+    "_1 _2 _3 ."
+    "_4 _5 _6 ."
+    "_7 _8 _9 equal"
+    "zero zero . equal";
+    width: 290px;
+}
+#drag{
+    background-color: black;
+}
+#drag:hover{
+    cursor: move;
+}
