@@ -35,7 +35,7 @@
             }
         }
     ],
-    "executionRoleArn": "arn:aws:iam::341641179033:role/3big-cluster-dev_ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::596059741778:role/3big-cluster-dev_ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "requiresCompatibilities": [
         "FARGATE"
