@@ -5,9 +5,7 @@ environment_variables:
         MY_ACCOUNT_ID: "596059741778"
         BIG3_API_REPO_NAME: "3big-api-srv"
         BIG3_API_IMAGE_TAG: "latest"
-        DOCKER_USERNAME: "aleistervm"
-        DOCKER_TOKEN: "dckr_pat_j3Zd2d-1YlKey0tn6v1XsIacB9k"
-        AWS_REGION: "us-west-2"
+        AWS_REGION: "us-east-1"
 phases:
     pre_build:
         commands:
@@ -16,8 +14,6 @@ phases:
             - echo $AWS_REGION
             - echo $BIG3_API_REPO_NAME
             - echo $BIG3_API_IMAGE_TAG
-            - echo $DOCKER_USERNAME
-            - echo $DOCKER_TOKEN
             - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $MY_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
             # - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 341641179033.dkr.ecr.us-east-1.amazonaws.com
             # - docker login --username $DOCKER_USERNAME --password $DOCKER_TOKEN
