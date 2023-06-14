@@ -3,7 +3,7 @@ version: 0.1
 environment_variables:
     plaintext:
         MY_ACCOUNT_ID: "596059741778"
-        BIG3_API_REPO_NAME: "3big-api-srv"
+        BIG3_API_REPO_NAME: "3big-ui-srv"
         BIG3_API_IMAGE_TAG: "latest"
         AWS_REGION: "us-east-1"
 phases:
