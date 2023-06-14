@@ -3,7 +3,7 @@ Resources:
     - TargetService:
           Type: AWS::ECS::Service
           Properties:
-              TaskDefinition: "arn:aws:ecs:us-east-1:596059741778:task-definition/3big-api-srv:12"
+              TaskDefinition: "arn:aws:ecs:us-east-1:596059741778:task-definition/3big-ui-srv:2"
               LoadBalancerInfo:
-                  ContainerName: "3big-api-srv"
+                  ContainerName: "3big-ui-srv"
                   ContainerPort: 4000
